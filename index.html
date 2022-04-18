@@ -60,45 +60,74 @@
           </a>
         </li>
       </ul>
-        <a class="header__logo" href="" aria-label="SitDownPlease - мебель и аксессуары">
-          <svg class="logo">
-            <use href="img/sprite.svg#logo"></use>
-          </svg>
-        </a>
+      <button class="burger">
+        <span class="burger__stripe burger__stripe_1"></span>
+        <span class="burger__stripe burger__stripe_2"></span>
+        <span class="burger__stripe burger__stripe_3"></span>
+      </button>
+      <a class="header__logo" href="" aria-label="SitDownPlease - мебель и аксессуары">
+        <svg class="logo">
+          <use href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="header__menu-wrap">
         <nav class="header__nav">
-        <ul class="header__main-menu menu">
-          <li class="menu__item">
-            <a class="menu__link" href="#catalog">
-              Каталог
+          <ul class="header__main-menu menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#catalog">
+                Каталог
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#shops">
+                Магазины
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#showroom">
+                Шоу-рум
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#delivery">
+                Доставка&nbsp;и&nbsp;оплата
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#discont">
+                Дисконт
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contacts">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__sec-menu sec-menu">
+          <li class="sec-menu__item">
+            <a class="grey-link sec-menu__link" href="#">
+              О&nbsp;компании
             </a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#shops">
-              Магазины
+          <li class="sec-menu__item">
+            <a class="grey-link sec-menu__link" href="#">
+              Гарантия&nbsp;и&nbsp;возврат
             </a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#showroom">
-              Шоу-рум
+          <li class="sec-menu__item">
+            <a class="grey-link sec-menu__link" href="#">
+              Корпоративным клиентам
             </a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#delivery">
-              Доставка и оплата
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#discont">
-              Дисконт
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#contacts">
-              Контакты
+          <li class="sec-menu__item">
+            <a class="grey-link sec-menu__link" href="#">
+              Дизайн&#8209;решение
             </a>
           </li>
         </ul>
-      </nav>
+      </div>
       <div class="header__data-block">
         <form class="header__search-wrap">
           <input class="input header__search" type="text" name="search" placeholder="Я хочу купить...">
@@ -151,23 +180,23 @@
         <div class="swiper-slide swiper-slide_1">
           <div class="container">
             <h2 class="hero-swiper__heading">Скидка 15%<br>на&nbsp;первую покупку</h2>
-            <button class="btn">Получить!</button>
           </div>
         </div>
         <div class="swiper-slide swiper-slide_2">
           <div class="container">
             <h2 class="hero-swiper__heading">1000+ аксессуаров<br>для дома</h2>
-            <button class="btn">Подробнее</button>
           </div>
         </div>
         <div class="swiper-slide swiper-slide_3">
           <div class="container">
             <h2 class="hero-swiper__heading">Коллекция стильного<br>и яркого текстиля</h2>
-            <button class="btn">Подробнее</button>
           </div>
         </div>
       </div>
       <div class="swiper-pagination hero-swiper__pagination"></div>
+    </div>
+    <div class="container hero__btn-wrap">
+      <button class="btn hero__btn">Получить!</button>
     </div>
   </section>
 
@@ -270,200 +299,218 @@
         <ul class="rated__goods-list">
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 5,0">5,0</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 5,0">5,0</span>
               <picture class="item__pic">
+                <source srcset="img/rated_1_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_1.png" alt="Диван кожаный “R-94”">
               </picture>
               <h3 class="item__title">Диван кожаный “R&#8209;94”</h3>
               <span class="item__price">94 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,9">4,9</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,9">4,9</span>
               <picture class="item__pic">
+                <source srcset="img/rated_2_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_2.png" alt="Диван апартековый “T-75”">
               </picture>
               <h3 class="item__title">Диван апартековый “T&#8209;75”</h3>
               <span class="item__price">69 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,8">4,8</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,8">4,8</span>
               <picture class="item__pic">
+                <source srcset="img/rated_3_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_3.png" alt="Диван тканевый “D-31”">
               </picture>
               <h3 class="item__title">Диван тканевый “D&#8209;31”</h3>
               <span class="item__price">28 490 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,8">4,8</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,8">4,8</span>
               <picture class="item__pic">
+                <source srcset="img/rated_4_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_4.png" alt="Диван велюровый “Y-68”">
               </picture>
               <h3 class="item__title">Диван велюровый “Y&#8209;68”</h3>
               <span class="item__price">22 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,8">4,8</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,8">4,8</span>
               <picture class="item__pic">
+                <source srcset="img/rated_5_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_5.png" alt="Диван из шинила “W-95”">
               </picture>
-              <h3 class="item__title">Диван из шинила “W&#8209;95”</h3>
+              <h3 class="item__title">Диван из&nbsp;шинила “W&#8209;95”</h3>
               <span class="item__price">22 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,8">4,8</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,8">4,8</span>
               <picture class="item__pic">
+                <source srcset="img/rated_6_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_6.png" alt="Диван флоковый “G-41”">
               </picture>
               <h3 class="item__title">Диван флоковый “G&#8209;41”</h3>
               <span class="item__price">17 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,8">4,8</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,8">4,8</span>
               <picture class="item__pic">
+                <source srcset="img/rated_7_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_7.png" alt="Диван шиниловый “V-43”">
               </picture>
               <h3 class="item__title">Диван шиниловый “V&#8209;43”</h3>
               <span class="item__price">19 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,7">4,7</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,7">4,7</span>
               <picture class="item__pic">
+                <source srcset="img/rated_8_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_8.png" alt="Диван велюровый “S-99”">
               </picture>
               <h3 class="item__title">Диван велюровый “S&#8209;99”</h3>
               <span class="item__price">19 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,7">4,7</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,7">4,7</span>
               <picture class="item__pic">
+                <source srcset="img/rated_9_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_9.png" alt="Диван из кожзама “F-85”">
               </picture>
               <h3 class="item__title">Диван из кожзама “F&#8209;85”</h3>
               <span class="item__price">26 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,6">4,6</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,6">4,6</span>
               <picture class="item__pic">
+                <source srcset="img/rated_10_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_10.png" alt="Диван флоковый “H-64”">
               </picture>
               <h3 class="item__title">Диван флоковый “H&#8209;64”</h3>
               <span class="item__price">25 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,6">4,6</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,6">4,6</span>
               <picture class="item__pic">
+                <source srcset="img/rated_11_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_11.png" alt="Диван флоковый “H-58”">
               </picture>
               <h3 class="item__title">Диван флоковый “H&#8209;58”</h3>
               <span class="item__price">23 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,6">4,6</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,6">4,6</span>
               <picture class="item__pic">
+                <source srcset="img/rated_12_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_12.png" alt="Диван из кожзама “R-43”">
               </picture>
               <h3 class="item__title">Диван из кожзама “R&#8209;43”</h3>
               <span class="item__price">33 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,6">4,6</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,6">4,6</span>
               <picture class="item__pic">
+                <source srcset="img/rated_13_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_13.png" alt="Диван из шинила “С-42”">
               </picture>
-              <h3 class="item__title">Диван из шинила “С&#8209;42”</h3>
+              <h3 class="item__title">Диван из&nbsp;шинила “С&#8209;42”</h3>
               <span class="item__price">18 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,6">4,6</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,6">4,6</span>
               <picture class="item__pic">
+                <source srcset="img/rated_14_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_14.png" alt="Диван велюровый “U-58”">
               </picture>
               <h3 class="item__title">Диван велюровый “U&#8209;58”</h3>
               <span class="item__price">21 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,5">4,5</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,5">4,5</span>
               <picture class="item__pic">
+                <source srcset="img/rated_15_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_15.png" alt="Диван флоковый “F-41”">
               </picture>
               <h3 class="item__title">Диван флоковый “F&#8209;41”</h3>
               <span class="item__price">17 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,5">4,5</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,5">4,5</span>
               <picture class="item__pic">
+                <source srcset="img/rated_16_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_16.png" alt="Диван велюровый “R-85”">
               </picture>
               <h3 class="item__title">Диван велюровый “R&#8209;85”</h3>
               <span class="item__price">18 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,5">4,5</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,5">4,5</span>
               <picture class="item__pic">
+                <source srcset="img/rated_17_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_17.png" alt="Диван велюровый “S-44”">
               </picture>
               <h3 class="item__title">Диван велюровый “S&#8209;44”</h3>
               <span class="item__price">19 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
           <li class="rated__list-item">
             <article class="rated__card item">
-              <span class="item__rating"><img src="img/star.svg" alt="рейтинг 4,4">4,4</span>
+              <span class="item__rating"><img class="item__star" src="img/star.svg" alt="рейтинг 4,4">4,4</span>
               <picture class="item__pic">
+                <source srcset="img/rated_18_xs.png" media="(max-width: 583px)">
                 <img class="item__img" src="img/rated_18.png" alt="Диван из шинила “С-80”">
               </picture>
-              <h3 class="item__title">Диван из шинила “С&#8209;80”</h3>
+              <h3 class="item__title">Диван из&nbsp;шинила “С&#8209;80”</h3>
               <span class="item__price">20 990 руб</span>
-              <button class="btn btn_trans">Купить</button>
+              <button class="btn btn_trans item__btn">Купить</button>
             </article>
           </li>
         </ul>
@@ -485,7 +532,7 @@
         <ul class="top-categories__list">
           <li class="top-categories__item">
             <div class="top-categories__card category-card">
-              <ul class="grey-link category-card__link-list">
+              <ul class="category-card__link-list">
                 <li class="grey-link category-card__link-wrap">
                   <a class="grey-link category-card__link" href="#">Прямые</a>
                 </li>
@@ -496,8 +543,12 @@
                   <a class="grey-link category-card__link" href="#">Модульные</a>
                 </li>
               </ul>
-              <h3 class="category-card__title">Диваны</h3>
+              <h3 class="category-card__title">Диваны
+                <a class="category-card__link-to-catalog category-card__link-to-catalog_mini" href="" target="blank">
+                <span class="arrow-mini"></span>
+              </a></h3>
               <picture class="category-card__pic">
+                <source srcset="img/top-categories-1_xs.png" media="(max-width: 583px)">
                 <img class="category-card__img" src="img/top-categories-1.png" alt="Диваны">
               </picture>
               <a class="category-card__link-to-catalog" href="" target="blank">
@@ -508,27 +559,7 @@
           </li>
           <li class="top-categories__item">
             <div class="top-categories__card category-card">
-              <ul class="grey-link category-card__link-list">
-                <li class="grey-link category-card__link-wrap">
-                  <a class="grey-link category-card__link" href="#">Мягкие</a>
-                </li>
-                <li class="grey-link category-card__link-wrap">
-                  <a class="grey-link category-card__link" href="#">Кресла-кровати</a>
-                </li>
-              </ul>
-              <h3 class="category-card__title">Кресла</h3>
-              <picture class="category-card__pic">
-                <img class="category-card__img" src="img/top-categories-2.png" alt="Кресла">
-              </picture>
-              <a class="category-card__link-to-catalog" href="" target="blank">
-                <span class="category-card__link-text">В каталог</span>
-                <span class="arrow-mini"></span>
-              </a>
-            </div>
-          </li>
-          <li class="top-categories__item">
-            <div class="top-categories__card category-card">
-              <ul class="grey-link category-card__link-list">
+              <ul class="category-card__link-list">
                 <li class="grey-link category-card__link-wrap">
                   <a class="grey-link category-card__link" href="#">Односпальные</a>
                 </li>
@@ -536,8 +567,14 @@
                   <a class="grey-link category-card__link" href="#">Двуспальные</a>
                 </li>
               </ul>
-              <h3 class="category-card__title">Кровати</h3>
+              <h3 class="category-card__title">Кровати
+                <a class="category-card__link-to-catalog category-card__link-to-catalog_mini" href="" target="blank">
+                  <span class="arrow-mini"></span>
+                </a>
+              </h3>
               <picture class="category-card__pic">
+                <source srcset="img/top-categories-3_xs.png" media="(max-width: 583px)">
+                <source srcset="img/top-categories-3_md.png" media="(max-width: 1230px)">
                 <img class="category-card__img" src="img/top-categories-3.png" alt="Кровати">
               </picture>
               <a class="category-card__link-to-catalog" href="" target="blank">
@@ -548,7 +585,7 @@
           </li>
           <li class="top-categories__item">
             <div class="top-categories__card category-card">
-              <ul class="grey-link category-card__link-list">
+              <ul class="category-card__link-list">
                 <li class="grey-link category-card__link-wrap">
                   <a class="grey-link category-card__link" href="#">Тумбы</a>
                 </li>
@@ -556,9 +593,15 @@
                   <a class="grey-link category-card__link" href="#">Комоды</a>
                 </li>
               </ul>
-              <h3 class="category-card__title">Тумбы и комоды</h3>
+              <h3 class="category-card__title">Тумбы и&nbsp;комоды
+                <a class="category-card__link-to-catalog category-card__link-to-catalog_mini" href="" target="blank">
+                  <span class="arrow-mini"></span>
+                </a>
+              </h3>
               <picture class="category-card__pic">
-                <img class="category-card__img" src="img/top-categories-4.png" alt="Тумбы и комоды">
+                <source srcset="img/top-categories-4_xs.png" media="(max-width: 583px)">
+                <source srcset="img/top-categories-4_md.png" media="(max-width: 1230px)">
+                <img class="category-card__img" src="img/top-categories-4.png" alt="Тумбы и&nbsp;комоды">
               </picture>
               <a class="category-card__link-to-catalog" href="" target="blank">
                 <span class="category-card__link-text">В каталог</span>
@@ -568,7 +611,32 @@
           </li>
           <li class="top-categories__item">
             <div class="top-categories__card category-card">
-              <ul class="grey-link category-card__link-list">
+              <ul class="category-card__link-list">
+                <li class="grey-link category-card__link-wrap">
+                  <a class="grey-link category-card__link" href="#">Мягкие</a>
+                </li>
+                <li class="grey-link category-card__link-wrap">
+                  <a class="grey-link category-card__link" href="#">Кресла-кровати</a>
+                </li>
+              </ul>
+              <h3 class="category-card__title">Кресла
+                <a class="category-card__link-to-catalog category-card__link-to-catalog_mini" href="" target="blank">
+                  <span class="arrow-mini"></span>
+                </a>
+              </h3>
+              <picture class="category-card__pic">
+                <source srcset="img/top-categories-2_xs.png" media="(max-width: 583px)">
+                <img class="category-card__img" src="img/top-categories-2.png" alt="Кресла">
+              </picture>
+              <a class="category-card__link-to-catalog" href="" target="blank">
+                <span class="category-card__link-text">В каталог</span>
+                <span class="arrow-mini"></span>
+              </a>
+            </div>
+          </li>
+          <li class="top-categories__item">
+            <div class="top-categories__card category-card">
+              <ul class="category-card__link-list">
                 <li class="grey-link category-card__link-wrap">
                   <a class="grey-link category-card__link" href="#">Деревянные</a>
                 </li>
@@ -576,8 +644,14 @@
                   <a class="grey-link category-card__link" href="#">Металлокаркас</a>
                 </li>
               </ul>
-              <h3 class="category-card__title">Стулья</h3>
+              <h3 class="category-card__title">Стулья
+                <a class="category-card__link-to-catalog category-card__link-to-catalog_mini" href="" target="blank">
+                  <span class="arrow-mini"></span>
+                </a>
+              </h3>
               <picture class="category-card__pic">
+                <source srcset="img/top-categories-5_xs.png" media="(max-width: 583px)">
+                <source srcset="img/top-categories-5_md.png" media="(max-width: 1230px)">
                 <img class="category-card__img" src="img/top-categories-5.png" alt="Стулья">
               </picture>
               <a class="category-card__link-to-catalog" href="" target="blank">
@@ -591,7 +665,7 @@
     </section>
 
     <section class="section useful">
-      <div class="container">
+      <div class="container useful__container">
         <div class="useful__top-block">
           <h2 class="section-title">Полезное</h2>
           <div class="swiper-btns-block">
@@ -613,7 +687,7 @@
             <div class="swiper-slide useful-swiper__slide">
               <img class="useful-swiper__img" src="img/useful-1.jpg" alt="иллюстрация к тексту">
               <div class="useful-swiper__cardframe">
-                <p class="useful-swiper__text">И нет сомнений, что сделанные на базе интернет-аналитики выводы представляют собой не что иное?</p>
+                <p class="useful-swiper__text">И нет сомнений, что сделанные на базе интернет&#8209;аналитики выводы представляют собой не что иное?</p>
                 <a class="btn btn_trans useful__btn" href="#">Читать</a>
               </div>
             </div>
@@ -651,10 +725,10 @@
     </section>
 
     <section class="section mail-us">
-      <div class="container">
+      <div class="container mail-us__container">
         <div class="mail-us__content">
           <h2 class="section-title">Мы всегда вам рады!</h2>
-          <p class="mail-us__description">Безусловно, новая модель организационной деятельности в значительной степени обусловливает важность распределения внутренних резервов и ресурсов.
+          <p class="mail-us__description">Безусловно, новая модель организационной деятельности в&nbsp;значительной степени обусловливает важность распределения внутренних резервов и&nbsp;ресурсов.
             <button class="mail-us__tip-btn">
               <svg class="tip-svg" aria-label="показать подсказку">
                 <use href="img/sprite.svg#tip"></use>
@@ -696,21 +770,21 @@
           </a>
           <ul class="soc-links-list">
             <li>
-              <a class="soc-links-list__link" href="#">
+              <a class="soc-links-list__link" href="#" aria-label="мы в фэйсбук">
                 <svg class="fb">
                   <use href="img/sprite.svg#fb"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="soc-links-list__link" href="#">
+              <a class="soc-links-list__link" href="#" aria-label="мы вконтакте">
                 <svg class="vk">
                   <use href="img/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="soc-links-list__link" href="#">
+              <a class="soc-links-list__link" href="#" aria-label="мы в инстаграм">
                 <svg class="instagram">
                   <use href="img/sprite.svg#instagram"></use>
                 </svg>
@@ -723,7 +797,7 @@
             <h2 class="more-info__title">О нас</h2>
             <ul class="more-info__inner-list">
               <li>
-                <a class="grey-link more-info__link" href="#">О компании</a>
+                <a class="grey-link more-info__link" href="#">О&nbsp;компании</a>
               </li>
               <li>
                 <a class="grey-link more-info__link" href="#">Блог</a>
